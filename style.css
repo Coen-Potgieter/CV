@@ -34,7 +34,20 @@
     .full-name {
       font-size: 40px;
       margin-bottom: 10px;
+
+
+
+        .first{
+        font-weight: 700;
+        color: #79A9CE;
+        }
+
+        .last{
+            font-weight: 300
+        }
     }
+    
+
     
     .contact-info {
       margin-bottom: 20px;
@@ -111,12 +124,12 @@
     a {
       text-decoration: none;
       color: #000000;
-      font-style: italic;
+      font-weight: bold;
     }
     
     a:hover {
       text-decoration: underline;
-      color: #000000;
+      color: #79A9CE;
     }
       
     .skills__item {
