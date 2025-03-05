@@ -24,13 +24,13 @@ body {
     background: #eee;
     font-family: "Merriweather", serif;
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
     font-size: 14px;
     padding-bottom: 50px;
 }
 
 .container {
-    max-width: 700px;   
+    max-width: 800px;   
     background: #ffffff;
     margin: 0px auto 0px; 
     box-shadow: 1px 1px 2px #dad7d7;
@@ -43,6 +43,7 @@ a {
     text-decoration: none;
     color: #000000;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 a:hover {
@@ -75,7 +76,6 @@ a:hover {
     .phone ,
     .links {
         color: #999999;
-        /* color: var(--secondary-col); */
         font-weight: 300;
     } 
 
@@ -98,14 +98,13 @@ a:hover {
     }
 
     .about span {
-        line-height: 20px;
-
+        line-height: 22px;
     }
-
 }
 
 
 .details {
+    margin-top: 15px;
     line-height: 20px;
 
     .section {
@@ -113,15 +112,18 @@ a:hover {
     }
 
     .section-title {
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         color: var(--main-col);
+        font-size: 18px;
         font-weight: bold;
         margin-bottom: 10px;
         text-transform: uppercase;
+
     }
 
     .section__list-item {
-        margin-bottom: 40px;
+        margin-left: 10px;
+        margin-bottom: 25px;
     }
 
     .section__list-item:last-of-type {
@@ -145,26 +147,47 @@ a:hover {
 
     .name {
         font-weight: bold;
+        font-size: 15px;
     }
 
-    .interest-list{
-        margin-left: 10px;
+    .interest-list {
+        display: grid;
+        width: 90%; 
+        grid-template-columns: repeat(2, auto); 
+        gap: 10px; 
+        list-style-type: square; 
+        margin-left: 20px;
+        font-size: 15px;
+        font-weight: bold;
+
+        .s {
+            justify-self: start;
+        }
+        .e {
+            justify-self: end;
+        }
     }
+
 
     .experience-list{
         margin-left: 30px;
+        margin-bottom: 20px;
+
+        .title {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .description {
+            display: block;
+            padding-left: 10px;
+            padding-bottom: 20px;
+            margin-top: 10px;
+        }
     }
-
-    .experience-desc{
-        display: block;
-        padding-left: 20px;
-        padding-bottom: 20px;
-    }
-
-
-
 
     .skills__item {
+        margin-left: 10px;
         margin-bottom: 10px;  
     }
 
